@@ -1,0 +1,81 @@
+.loginpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.background{
+  background-image: url('stars-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 5px;
+  padding: 30px 40px;
+  border-radius: 10px;
+  width: 300px;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+}
+
+form::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(77, 77, 77, 0.4);
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  z-index: -1;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  background-color: rgba(107, 107, 107, 0.4);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  background-color: #ffffff;
+  color: black;
+  padding: 10px 20px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #6b6b6b;
+}
+
+h1{
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+label{
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+}
